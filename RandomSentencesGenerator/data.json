@@ -1,0 +1,28 @@
+{
+  "names": [
+    "Peter", "Michell", "Jane", "Steve", "Anna", "George", "Maria", "Daniel", "Laura", "Ivan",
+    "Nina", "Chris", "Alex", "Emily", "Victor", "Tina", "Max", "Samantha", "Nick", "Olivia"
+  ],
+  "places": [
+    "Sofia", "Plovdiv", "Varna", "Burgas", "Ruse", "Stara Zagora", "Blagoevgrad", "Veliko Tarnovo",
+    "Kyustendil", "Vidin", "Montana", "Pleven", "Dobrich", "Pazardzhik", "Yambol", "Haskovo"
+  ],
+  "adverbs": [
+    "slowly", "diligently", "warmly", "sadly", "rapidly", "cheerfully", "gracefully", "silently",
+    "boldly", "awkwardly", "curiously", "eagerly", "gently", "clumsily", "hastily", "lazily", "seriously", "madly", "nervously", "politely"
+  ],
+  "verbs": [
+    "eats", "holds", "sees", "plays with", "brings", "builds", "throws", "writes", "reads", "kicks",
+    "paints", "fixes", "breaks", "catches", "finds", "loses", "cleans", "pushes", "pulls", "drives"
+  ],
+  "nouns": [
+    "stones", "cake", "apple", "laptop", "bikes", "book", "ball", "pencil", "phone", "sandwich",
+    "chair", "door", "keyboard", "mouse", "glasses", "bottle", "camera", "microphone", "pen", "notebook"
+  ],
+  "details": [
+    "near the river", "at home", "in the park", "on the beach", "in the forest", "by the lake",
+    "under the table", "on the roof", "next to the school", "behind the museum", "inside the cafe",
+    "in front of the library", "beneath the stairs", "over the mountain", "on the bridge",
+    "beside the statue", "around the fountain", "under the umbrella", "on the train", "at the bus stop"
+  ]
+}

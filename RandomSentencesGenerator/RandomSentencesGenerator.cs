@@ -1,16 +1,26 @@
-﻿namespace RandomSentencesGenerator;
+﻿using System.Text.Json;
+
+namespace RandomSentencesGenerator;
 
 class RandomSentencesGenerator
 {
     static void Main(string[] args)
     {
-        string[] names = { "Peter", "Michell", "Jane", "Steve" };
-        string[] places = { "Sofia", "Plovdiv", "Varna", "Burgas" };
-        string[] adverbs = { "slowly", "diligently", "warmly", "sadly", "rapidly" };
-        string[] verbs = { "eats", "holds", "sees", "plays with", "brings" };
-        string[] nouns = { "stones", "cake", "apple", "laptop", "bikes" };
-        string[] details = { "near the river", "at home", "in the park" };
+        string json = File.ReadAllText("data.json");
+        JsonSerializerOptions options = new JsonSerializerOptions
+        {
+            PropertyNameCaseInsensitive = true
+        };
 
+        SentenceData data = JsonSerializer.Deserialize<SentenceData>(json, options);
+        
+        string[] names = data.Names?.ToArray() ?? Array.Empty<string>();
+        string[] places = data.Places?.ToArray() ?? Array.Empty<string>();
+        string[] adverbs = data.Adverbs?.ToArray() ?? Array.Empty<string>();
+        string[] verbs = data.Verbs?.ToArray() ?? Array.Empty<string>();
+        string[] nouns = data.Nouns?.ToArray() ?? Array.Empty<string>();
+        string[] details = data.Details?.ToArray() ?? Array.Empty<string>();
+        
         Console.WriteLine("Welcome to Random sentences generator!\n\n" +
                           "This is your first random generated sentence: ");
         while (true)
@@ -41,4 +51,14 @@ class RandomSentencesGenerator
         string word = words[randomIndex];
         return word;
     }
+}
+
+class SentenceData
+{
+    public List<string> Names { get; set; }
+    public List<string> Places { get; set; }
+    public List<string> Adverbs { get; set; }
+    public List<string> Verbs { get; set; }
+    public List<string> Nouns { get; set; }
+    public List<string> Details { get; set; }
 }
