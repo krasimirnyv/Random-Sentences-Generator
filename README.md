@@ -104,7 +104,7 @@ You can view the source code for this project here:
 ## 🚀 Try the Demo
 You can test the generator directly in your browser here:
 
-<a href="https://replit.com/@krasimirnyv/Random-Sentences-Generator" target="_blank">
+<a href="https://replit.com/@krasimirnyv/Random-Sentences-Generator?v=1" target="_blank">
   <img alt="Try Now Button" src="images/Try logo.png" width="150">
 </a>
 
